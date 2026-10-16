@@ -9,8 +9,8 @@ materials = {
     "copper": 70
 }
 
-def circle_area(d):
-    return round(math.pi * d**2 / 4, 2)
+def circle_area(rod_diameter):
+    return round(math.pi * rod_diameter**2 / 4, 2)
 
 def stress(force, area):
     return round(force / area, 2)
@@ -22,8 +22,8 @@ def check_status(result, allowable):
         return "unsafe"
 
 while True:
-    answer = input("Type 'no' to quit, 'yes' to continue: ")
-    answer == "yes"
+    answer = input("Type 'no' to quit, anything else to continue: ").lower()
+   
     if answer == "no":
         break
 

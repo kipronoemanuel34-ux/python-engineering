@@ -32,7 +32,7 @@ while True:
     name = input("Enter the material's name:")
     hole_diameter = float(input("Enter the hole diameter:"))
     if hole_diameter >= rod_diameter:
-         print("The hole diameter must be lees than the rod diameter.")
+         print("The hole diameter must be less than the rod diameter.")
     else:
       if name in materials:
          allowable_stress = materials[name] / 2
